@@ -245,32 +245,100 @@ a.btn::befor{
     display:flex;
 }
 
+/* Eduaction ------------------------------------------*/
 
-/*---------------------SKILLS-------------------------------*/
-.skills{
-    max-width:80vw;
-    margin:auto;
-    height: 90vh;
-}
-
-.my-skills{
+.school{
     display:flex;
-    
-    justify-content:space-between;
+    float:left;
+    margin:5rem;
+    padding:0;
 }
-.row1{
-    flex-basis:45%;
+.education{
+    font-size: large;
+    color: #fff;
+    text-align: center;
 }
-.row2{
-    flex-basis:45%;
+.school{
+    align-content: space-evenly;
 }
-.my-skills h2{
-    display:flex;
-    color:#12f7ff;
+
+/* Contact ---------------------------------------------*/
+
+#contact{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('bg.jpg');
+    background-size: cover;
     
 }
 
-/* ----footer---------------*/
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+}
+.contact .content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color:#fff;
+
+}
+.contact .content p{
+    
+    font-weight: 300;
+    color:#fff;
+    
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+
+}
+.container .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+.container .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+
+}
+.container .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+
+}
+.container .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    
+}
+/* ----footer-------------------------------------------*/
 footer{
     background-color: black;
     color: yellowgreen;
@@ -293,3 +361,61 @@ footer{
     color:gray;
     padding:12px 0;
 }
+
+/*-----------Key frames----------------
+@keyframes morph{
+    0%,
+    100%{
+        border-radius: 40% 60% 70% 30% / 40% 40% 60% 50% ;
+    }
+    30%{
+        border-radius: 70% 30% 50% 50% / 30% 30% 70% 70% ;
+    }
+    60%{
+        border-radius: 100% 60% 60% 100% / 100% 100% 60% 60% ;
+    }
+    80%{
+        border-radius: 69% 31% 66% 34% / 21% 30% 70% 79% ;
+    }
+}
+
+@keyframes html{
+    0%{
+        width:0%;
+    }
+    100%{
+        width:72%;
+    }
+}
+@keyframes figma{
+    0%{
+        width:0%;
+    }
+    100%{
+        width:90%;
+    }
+}
+@keyframes javascript{
+    0%{
+        width:0%;
+    }
+    100%{
+        width:80%;
+    }
+}
+@keyframes css{
+    0%{
+        width:0%;
+    }
+    100%{
+        width:62%;
+    }
+}
+
+@keyframes glow{
+    0%{
+        background: var(--bg-color);
+        box-shadow: var(--neon-box-shadow);
+
+    }
+}*/
