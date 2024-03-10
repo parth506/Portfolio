@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Slide Down Navigation Bar on Scroll</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  article {
+    position: fixed;
+    margin-left: 10px;
+  }
+
+  #navlist {
+    background-color: #0074D9;
+    position: fixed;
+    left: 45%;
+    top: -60px;
+    width: auto;
+    display: block;
+    transition: top 0.3s;
+  }
+
+  #navlist a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 15px;
+  }
+
+  #navlist a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+</style>
+</head>
+<body>
+<article>
+  <h1 style="color:green;">Task Manager</h1>
+  <b>A Simple Task Management Portal</b>
+  <p>Manage your tasks efficiently with our easy-to-use task manager. Keep track of your to-do list, prioritize tasks, and stay organized.</p>
+</article>
+<div id="navlist">
+  <a href="#">Home</a>
+  <a href="#">About Us</a>
+  <a href="#">Our Products</a>
+  <a href="#">Careers</a>
+  <a href="#">Contact Us</a>
+</div>
+<div class="scrollable" style="padding:15px 15px 4500px;"></div>
+<script>
+  window.onscroll = function() {
+    scroll()
+  };
+
+  function scroll() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("navlist").style.top = "0";
+    } else {
+      document.getElementById("navlist").style.top = "-60px";
+    }
+  }
+</script>
+</body>
+</html>
+```
+
+This code now reflects a Task Manager portal in the content section. Feel free to further customize it according to your needs.
