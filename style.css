@@ -270,7 +270,16 @@ div.skill-main{
 .school{
     align-content: space-evenly;
 }
-
+/*----Projects----------------------------*/
+div.pro{
+    display:inline-flex;
+    
+}
+img.pro{
+    border-radius: 9px;
+    margin:0;
+    padding:0;
+}
 /* Contact ---------------------------------------------*/
 
 #contact{
